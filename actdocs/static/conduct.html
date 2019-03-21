@@ -1,0 +1,72 @@
+[% WRAPPER ui title = global.conference.name %]
+
+[% BLOCK fpm %]
+<a href="http://www.mongueurs.pm/" target="_fpm"><t><fr>Mongueurs de Perl</fr><en>French Perl Mongers</en></t></a>
+[% END %]
+[% BLOCK assoc %]
+<a href="http://www.mongueurs.pm/" target="_fpm"><t><fr>association</fr><en>non profit association</en></t></a>
+[% END %]
+[% BLOCK cn2 %]
+<a href="http://www.cite-sciences.fr/fr/carrefour-numerique/" target="_carrefournum2">Carrefour Numérique²</a>
+[% END %]
+
+
+<h2><t>
+<fr>Code de Conduite</fr>
+<en>Code of Conduct</en>
+</t></h2>
+
+<p>
+<t>
+<fr>
+Soyez impeccables les uns avec les autres.
+Si quelque chose n'est pas impeccable, parlez-en aux organisateurs.
+</fr>
+<en>
+Be excellent to each other.
+If anything is less than excellent, talk to the organisers.
+</en>
+</t>
+</p>
+
+<t>
+<fr>
+<p>On s'attend à ce que vous vous teniez bien. C'est la bonne façon de passer
+un bon moment.
+</p>
+<p>
+Cela dit, les organisateurs sont là.
+&Agrave; défaut, il y a le personnel du [% PROCESS cn2 %].
+<br />
+Ne vous laissez pas embêter (pour rester poli), ne laissez pas quelqu'un se
+faire embêter.
+</p>
+</fr>
+<en>
+<p>
+We want to have a great time, so we expect you'll behave nicely.
+No need to insist on that.
+</p>
+<p>
+Nevertheless there will be the organizers, the staff of [% PROCESS cn2 %].
+<br />
+Don't let anyone piss you off, don't let anyone being pissed off.
+</p>
+</en>
+</t>
+
+
+
+<div style="text-align:center">
+	<a href="http://mongueurs.net/" target="mongueurs">
+		<img style="margin-left:30px" border="0" src="[% 
+make_uri_info('img','mongueurs_128x128.png') %]" />
+	</a>
+	&nbsp;
+	<a href="http://www.cite-sciences.fr/fr/carrefour-numerique/" target="cn2">
+		<img style="margin-right:30px" border="0" src="[% make_uri_info('img', 'logo.citesciences.large.png') %]" />
+	</a>
+</div>
+
+[% END %]
+
