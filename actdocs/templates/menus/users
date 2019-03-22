@@ -22,6 +22,7 @@
       [% END %]
   [% END %]
   --!>
+  [% IF global.request.user %]
     [% WRAPPER menus/item %]
         <a href="[% make_uri('search') %]">
             {{Search}}
@@ -44,4 +45,5 @@
             </a>
         [% END %]
     [% END %]
+  [% END %]
 </ul>
