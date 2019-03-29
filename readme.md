@@ -14,6 +14,6 @@ dépot du site [des journées perl 2019](https://journeesperl.fr/jp2019/)
 
 # todo
 
-    * virer le tweeter
-    * actdocs/src/index-fr.md status: translate-en:0% review:0%
+* reactivations dans actdocs/templates/menus/information
+* actdocs/src/index-fr.md status: translate-en:0% review:0%
 
