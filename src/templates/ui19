@@ -5,17 +5,18 @@
 doctype html
 html(xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]")
   head
-    title $if(title-prefix)$$title-prefix$ – $endif$$pagetitle$
     meta(charset="utf-8")/
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")/
     meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")/
     |[% IF openid %]
     |<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
     |[% END %]
     |<link rel="alternate" type="application/atom+xml"
     | title="[% global.conference.name %]"
-    | href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) ].xml"/>
+    | href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml"/>
     |[%- "<title>$title</title>" IF title -%]
-
+  body
+    //- |[% content %]
     //- |<link rel="stylesheet" type="text/css" href="/css/act-base.css" />
     //- |<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
     //- |<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'bootstrap.min.css') %]" media="screen, projection" />
@@ -53,6 +54,7 @@ html(xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]")
 
 //- CSS Stylesheets -->
 //- <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" /> -->
+
 
 //-  <body id="Body">
 //-    <div class="container-fluid">

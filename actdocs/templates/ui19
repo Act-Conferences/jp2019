@@ -1,0 +1,7 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>[% IF openid %]
+<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+[% END %]
+<link rel="alternate" type="application/atom+xml"
+title="[% global.conference.name %]"
+href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml"/>
+[%- "<title>$title</title>" IF title -%]</head><body></body></html>
