@@ -1,0 +1,135 @@
+//- vim: et ts=2 sts=2 sw=2 fp=pug
+//- i warmly recommend the indent-object plugin to edit pug content.
+//- 1: https://github.com/michaeljsmith/vim-indent-object
+
+doctype html
+html(xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]")
+  head
+    title $if(title-prefix)$$title-prefix$ – $endif$$pagetitle$
+    meta(charset="utf-8")/
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes")/
+    |[% IF openid %]
+    |<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+    |[% END %]
+    |<link rel="alternate" type="application/atom+xml"
+    | title="[% global.conference.name %]"
+    | href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) ].xml"/>
+    |[%- "<title>$title</title>" IF title -%]
+
+    //- |<link rel="stylesheet" type="text/css" href="/css/act-base.css" />
+    //- |<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+    //- |<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'bootstrap.min.css') %]" media="screen, projection" />
+    //- |<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'fpw.css') %]" />
+    //- |<link rel="stylesheet" href="[% make_uri_info('css', 'bootstrap-responsive.min.css') %]" media="screen">
+    //- //- <!-- JavaScript sugar -->
+    //- |<script src="[% make_uri_info('js', 'jquery-1.9.0.min.js') %]"></script>
+    //- |<script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
+    //- |<script>$('.dropdown-toggle').dropdown();</script>
+    //- |<script src="/js/act.js"></script>
+    //- |<!-- Favorite icon -->
+    //- |<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    //- |<!-- Pour Facebook -->
+    //- |<meta property="og:image" content="[% global.request.base_url %][% make_uri_info('img', 'logo_mongueurs.png') %]" />
+    //- |<link rel="image_src" content="[% global.request.base_url %][% make_uri_info('img', 'logo_mongueurs.png') %]" />
+
+    //- |$if(highlighting-css)$#[style(type="text/css") $highlighting-css$]$endif$
+    //- |$for(css)$ #[link(rel="stylesheet" href="$css$")/]$endfor$
+    //- |$if(math)$$math$$endif$
+    //- |$for(header-includes)$$header-includes$$endfor$
+
+    //- body
+    //-   #page
+    //-     |$for(include-before)$$include-before$$endfor$
+    //-     |$if(title)$
+    //-     header
+    //-       h1.title $title$
+    //-       |$if(subtitle)$#[p.subtitle $subtitle$]$endif$
+    //-       |$for(author)$#[p.author $author$]$endfor$
+    //-       |$if(date)$#[p.date $date$]$endif$
+    //-     |$endif$
+    //-     |$if(toc)$#[nav(id="$idprefix$TOC") $table-of-contents$]$endif$
+    //-     |$body$
+    //-     |$for(include-after)$$include-after$$endfor$
+
+//- CSS Stylesheets -->
+//- <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" /> -->
+
+//-  <body id="Body">
+//-    <div class="container-fluid">
+//-        <div class="hero-unit">
+//-	  <a href="[% make_uri('') %]" style="text-decoration:none;">
+//-            <div class="visible-phone">
+//-                <div class="header-titre">
+//-                <h1>
+//-                    <t><fr>Les Journ&eacute;es Perl 2019</fr><en>French Perl Workshop 2019</en></t>
+//-                </h1>
+//-                <p>
+//-                    <t><fr>19 au 22 juin 2019 &agrave; Strasbourg</fr><en>June 19-22, 2019 in Strasbourg</en></t>
+//-                </p>
+//-                </div>
+//-            </div>
+//-
+//-            <div class="visible-tablet">
+//-                <div class="header-titre">
+//-                <h1>
+//-                    <t><fr>Les Journ&eacute;es Perl 2019</fr><en>French Perl Workshop 2019</en></t>
+//-                </h1>
+//-                <p>
+//-                    <t><fr>19 au 22 juin 2019 &agrave; Strasbourg</fr><en>June 19-22, 2019 in Strasbourg</en></t>
+//-                </p>
+//-                </div>
+//-            </div>
+//-
+//-           <div class="row-fluid visible-desktop">
+//-                <div class="header-titre">
+//-                <h1>
+//-                    <t><fr>Les Journ&eacute;es Perl 2019</fr><en>French Perl Workshop 2019</en></t>
+//-                </h1>
+//-                <p>
+//-                    <t><fr>19 au 22 juin 2019 &agrave; Strasbourg</fr><en>June 19-22, 2019 in Strasbourg</en></t>
+//-                </p>
+//-                </div>
+//-            </div>
+//-          </a>
+//-        </div>
+//-
+//-        <div class="row-fluid hidden-desktop">
+//-        <div class="span2">
+//-          [% PROCESS menu2 %]
+//-        </div>
+//-            <div class="span10 thumbnail">
+//-                [% content %]
+//-            </div>
+//-        </div>
+//-        <div class="row-fluid visible-desktop">
+//-            <div class="span2">
+//-                [% PROCESS menu2 %]
+//-            </div>
+//-            <div class="span8 thumbnail">
+//-                [% content %]
+//-            </div>
+//-            <div class="span2">
+//-                  [% PROCESS sponsors %]
+//-            </div>
+//-        </div>
+//-    </div>
+//-    <footer class="footer">
+//-        <div class="container-fluid">
+//-            <div class="row-fluid">
+//-                <div class="span4 offset2">
+//-                    [% PROCESS menus/pre_confs %]
+//-                </div>
+//-                <div class="span4">
+//-                      [% PROCESS menus/act_confs %]
+//-                </div>
+//-                <p id="copyright">Copyright &copy; <a
+//-                href="http://mongueurs.net" >Les Mongueurs de Perl</a>, 2004-2019
+//-                | Powered by <a href="http://act.mongueurs.net/">Act</a>
+//-                | Running on <a href="http://www.freebsd.org/">FreeBSD</a></p>
+//-            </div>
+//-        </div>
+//-    </footer>
+//-
+//-  </body>
+//-</html>
+//-
