@@ -8,7 +8,6 @@ demo      = $(pages:actdocs/static/%.html=$(demo_root)/%.html)
 templates = $(src_templates:src/templates/%=actdocs/templates/%)
 
 all : $(pages) $(templates) $(demo)
-# test: $(demo)
 
 actdocs/static/%.html: src/%.pug $(templates) ; pug < $< > $@
 actdocs/templates/%  : src/templates/%        ; pug < $< > $@
