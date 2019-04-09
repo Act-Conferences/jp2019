@@ -4,4 +4,4 @@
 <link rel="alternate" type="application/atom+xml"
 title="[% global.conference.name %]"
 href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml"/>
-[%- "<title>$title</title>" IF title -%]</head><body></body></html>
+[%- "<title>$title</title>" IF title -%]</head><body><menu>[%- IF global.request.user -%]<a href="register">s'enregistrer</a><a href="main">connexion</a><a href="search">recherche</a><a href="stats">statistiques</a>[%- ELSE -%]<a href="logout">se déconnecter</a>[%- END  -%]</menu><article id="content">[%- content -%]</article><article id="sponsors">[% PROCESS sponsors %]</article></body></html>
