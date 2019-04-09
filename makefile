@@ -12,4 +12,6 @@ all : $(pages) $(templates) $(demo)
 actdocs/static/%.html: src/%.pug $(templates) ; pug < $< > $@
 actdocs/templates/%  : src/templates/%        ; pug < $< > $@
 $(demo_root)         :                        ; mkdir -p $@
-$(demo)              : $(demo_root) $(pages)  ; TTREERC=ttree.cfg ttree
+$(demo)              : $(demo_root) $(pages)
+	TTREERC=ttree.cfg ttree
+	rsync -r wwwdocs/* demo/
