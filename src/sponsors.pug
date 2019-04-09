@@ -1,33 +1,33 @@
 //- vim: et ts=2 sts=2 sw=2 fp=pug
 |[% WRAPPER ui title = global.conference.name %]
 
-h2
-  t
-    fr Notre partenaire
-    en Our partnership
-.topcontent
-  p
-    t
-      fr Merci aux entreprises qui nous aident à préparer les Journées Perl 2019
-      en We want to thank the organization that help us make the French Perl Workshop 2019
-
-//-  img => src of the logo relative to /img
-//-  nom => organization name
-//-  url => organization website url
-//-  lnk => name of the anchor in this page
-|[% sponsors = [];
-|   BLOCK sponsor;
-|   url_show = url_show || url %]
-.litcontent
-  a(name="[% lnk %]")
-  h3 [% name %]
-  a.left(href="[% url %]")
-    img.icon(src="[% make_uri('img')%]/[% img %]" width="400" alt="[% name %]" title="[% name %]")
-  p [% content %]
-  p
-    a(href="[% url %]")  [% url_show %]
-  hr/
-|[% END %]
+//- h2
+//-   t
+//-     fr Notre partenaire
+//-     en Our partnership
+//- .topcontent
+//-   p
+//-     t
+//-       fr Merci aux entreprises qui nous aident à préparer les Journées Perl 2019
+//-       en We want to thank the organization that help us make the French Perl Workshop 2019
+//- 
+//- //-  img => src of the logo relative to /img
+//- //-  nom => organization name
+//- //-  url => organization website url
+//- //-  lnk => name of the anchor in this page
+//- |[% sponsors = [];
+//- |   BLOCK sponsor;
+//- |   url_show = url_show || url %]
+//- .litcontent
+//-   a(name="[% lnk %]")
+//-   h3 [% name %]
+//-   a.left(href="[% url %]")
+//-     img.icon(src="[% make_uri('img')%]/[% img %]" width="400" alt="[% name %]" title="[% name %]")
+//-   p [% content %]
+//-   p
+//-     a(href="[% url %]")  [% url_show %]
+//-   hr/
+//- |[% END %]
 
 t
   fr
@@ -52,48 +52,43 @@ p
 hr/
 p fuck act!
 
-
-
-
-
-
-|[% WRAPPER sponsor
-|  img = 'logo.renater.svg'
-|  nom = "Renater"
-|  url = "http://www.renater.fr"
-|  lnk = 'renater'
-|  %]
-
-t
-  fr
-    p.
-      RENATER est le Réseau National de télécommunications pour la Technologie
-      l’Enseignement et la Recherche. un GIP du même nom est en charge de son
-      évolution et sa maintenance. Le réseau a été déployé en France a partir du début
-      des années 90 pour fédérer les infrastructures de télécommunication pour la
-      recherche et l’éducation. Afin de mener à bien cette action, le Groupement
-      d’Intérêt Public RENATER a été constitué en février 1993.
-
-    p.
-      Aujourd'hui, les organismes membres du GIP RENATER sont : CNRS, CPU, CEA,
-      INRIA, CNES, INRA, INSERM, ONERA, CIRAD, Irstea, IRD, BRGM, ainsi que le
-      Ministère de l’Éducation Nationale et le Ministère de l’enseignement supérieur,
-      de la Recherche et de l’Innovation. RENATER, acteur de référence des
-      infrastructures numériques de la communauté enseignement et recherche, conçoit
-      et exploite le réseau sécurisé à très haut débit fournissant une connectivité
-      nationale et internationale dédiée à plus de 2 millions d’utilisateurs
-      (étudiants, enseignants, chercheurs) à travers plus de 1300 sites, en métropole
-      et en Outre-Mer.  RENATER propose également un portefeuille de services autour
-      de la connectivité, l'identité, la sécurité, la communication, la collaboration
-      et la mobilité, garantissant la confidentialité et la sécurité des données.
-      L’objectif permanent de RENATER est de précéder les évolutions afin de toujours
-      apporter les solutions les plus performantes à ses utilisateurs et accompagner
-      des projets innovants.
-
-    p.
-      #[a(href="mailto:virginie.blanquart@renater.fr") Contact presse]
-
-|[% END %]
+//- |[% WRAPPER sponsor
+//- |  img = 'logo.renater.svg'
+//- |  nom = "Renater"
+//- |  url = "http://www.renater.fr"
+//- |  lnk = 'renater'
+//- |  %]
+//- 
+//- t
+//-   fr
+//-     p.
+//-       RENATER est le Réseau National de télécommunications pour la Technologie
+//-       l’Enseignement et la Recherche. un GIP du même nom est en charge de son
+//-       évolution et sa maintenance. Le réseau a été déployé en France a partir du début
+//-       des années 90 pour fédérer les infrastructures de télécommunication pour la
+//-       recherche et l’éducation. Afin de mener à bien cette action, le Groupement
+//-       d’Intérêt Public RENATER a été constitué en février 1993.
+//- 
+//-     p.
+//-       Aujourd'hui, les organismes membres du GIP RENATER sont : CNRS, CPU, CEA,
+//-       INRIA, CNES, INRA, INSERM, ONERA, CIRAD, Irstea, IRD, BRGM, ainsi que le
+//-       Ministère de l’Éducation Nationale et le Ministère de l’enseignement supérieur,
+//-       de la Recherche et de l’Innovation. RENATER, acteur de référence des
+//-       infrastructures numériques de la communauté enseignement et recherche, conçoit
+//-       et exploite le réseau sécurisé à très haut débit fournissant une connectivité
+//-       nationale et internationale dédiée à plus de 2 millions d’utilisateurs
+//-       (étudiants, enseignants, chercheurs) à travers plus de 1300 sites, en métropole
+//-       et en Outre-Mer.  RENATER propose également un portefeuille de services autour
+//-       de la connectivité, l'identité, la sécurité, la communication, la collaboration
+//-       et la mobilité, garantissant la confidentialité et la sécurité des données.
+//-       L’objectif permanent de RENATER est de précéder les évolutions afin de toujours
+//-       apporter les solutions les plus performantes à ses utilisateurs et accompagner
+//-       des projets innovants.
+//- 
+//-     p.
+//-       #[a(href="mailto:virginie.blanquart@renater.fr") Contact presse]
+//- 
+//- |[% END %]
 
 //- |[% WRAPPER sponsor
 //- |  img = 'logo-dvp-400x165.png'
