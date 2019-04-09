@@ -5,14 +5,13 @@
     END;
   END;
 WRAPPER isponsor
-   img = 'logo.carrnum.jpg'
-   name = "Carrefour Numérique²"
-   url = 'http://www.cite-sciences.fr/fr/au-programme/lieux-ressources/carrefour-numerique2/';
+   img = 'logo/unistra.svg'
+   name = "Direction du numérique de l'université de Strasbourg"
+   url = 'http://www.unistra.fr';
 END;
 WRAPPER isponsor
    img = 'logo/renater.svg'
    name = "Renater"
    url = 'http://www.renater.fr';
 END;
-
 %]</center>
