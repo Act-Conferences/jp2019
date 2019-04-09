@@ -91,8 +91,6 @@
         <div class="row-fluid visible-desktop">
             <div class="span2">
                 [% PROCESS menu2 %]
-<p>help us to improve this site: <a href="https://github.com/Act-Conferences/jp2019">fork it on github</a></p>
-
             </div>
             <div class="span8 thumbnail">
                 [% content %]
