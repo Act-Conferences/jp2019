@@ -18,11 +18,13 @@
         </a>
     [% END %]
     [% WRAPPER menus/item %]
+    <!--
         <a href="[% make_uri('accommodation.html') %]">
             <t>
                 <en>Accommodation</en>
                 <fr>H&eacute;bergement</fr>
             </t>
         </a>
+        -->
     [% END %]
 </ul>
