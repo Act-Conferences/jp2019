@@ -1,4 +1,4 @@
-[% WRAPPER ui title = global.conference.name %]<h2><t><fr>Notre partenaire</fr><en>Our partnership</en></t></h2><div class="topcontent"><p><t><fr>Merci aux entreprises qui nous aident à préparer les Journées Perl 2019</fr><en>We want to thank the organization that help us make the French Perl Workshop 2019</en></t></p></div>[% sponsors = [];
+[% WRAPPER ui title = global.conference.name %]<h2><t><fr>Nos partenaires</fr><en>Our partnerships</en></t></h2><div class="topcontent"><p><t><fr>Merci aux organismes qui nous aident à préparer les Journées Perl 2019</fr><en>We want to thank the organization that help us make the French Perl Workshop 2019</en></t></p></div>[% sponsors = [];
   BLOCK sponsor;
   url_show = url_show || url %]<div class="litcontent"><a name="[% lnk %]"></a><h3>[% name %]</h3><a class="left" href="[% url %]"><img class="icon" src="[% make_uri('img')%]/[% img %]" width="400" alt="[% name %]" title="[% name %]"/></a><p>[% content %]</p><p><a href="[% url %]"> [% url_show %]</a></p><hr/></div>[% END %]
 [% WRAPPER sponsor
