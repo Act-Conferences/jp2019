@@ -1,16 +1,15 @@
 //- vim: et ts=2 sts=2 sw=2 fp=pug
 |[% WRAPPER ui title = global.conference.name %]
 
-//- h2
-//-   t
-//-     fr Notre partenaire
-//-     en Our partnership
-//- .topcontent
-//-   p
-//-     t
-//-       fr Merci aux entreprises qui nous aident à préparer les Journées Perl 2019
-//-       en We want to thank the organization that help us make the French Perl Workshop 2019
-
+h2
+  t
+    fr Nos partenaires
+    en Our partnerships
+.topcontent
+  p
+    t
+      fr Merci aux organismes qui nous aident à préparer les Journées Perl 2019
+      en We want to thank the organization that help us make the French Perl Workshop 2019
 
 //-  img => src of the logo relative to /img
 //-  nom => organization name
@@ -36,7 +35,6 @@
 |  url = "http://www.renater.fr"
 |  lnk = 'renater'
 |  %]
-
 
 t
   fr
@@ -70,6 +68,14 @@ t
     p TODO
     p #[a(href="mailto:virginie.blanquart@renater.fr") Contact presse]
 
+|[% END %]
+
+|[% WRAPPER sponsor
+|  img = 'logo/unistra.svg'
+|  nom = "Université de Strasbourg"
+|  url = "http://www.unistra.fr"
+|  lnk = 'unistra'
+|  %]
 |[% END %]
 
 //- |[% WRAPPER sponsor
