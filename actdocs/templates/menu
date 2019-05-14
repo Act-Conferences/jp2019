@@ -16,7 +16,7 @@
             <a href="[% make_uri('main') %]">{{Log in}}</a>
         </li>
     [% END %]
-    <li><a href="mailto:journees-perl-2019-contact@listes.renater.fr">contact</a></li>
+    <li><a href="mailto:journees-perl-2019-contact@listes.renater.fr">Contact</a></li>
     <li class="dropdown">
       <a href="[% make_uri('sponsors.html') %]">
         <t>
