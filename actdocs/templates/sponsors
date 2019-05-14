@@ -4,12 +4,12 @@
 [%
 
 BLOCK isponsor;
-    %]<h2><a class="icon" href="[%  url %]">[%
+    %]<p><a class="icon" href="[%  url %]">[%
     %]<img
     class="icon"
     width="225"
     src="[% make_uri('img')%]/[% img %]"
-    alt="[% name %]" title="[% name %]"/></a></h2>[%
+    alt="[% name %]" title="[% name %]"/></a></p>[%
 END;
 
 WRAPPER isponsor
