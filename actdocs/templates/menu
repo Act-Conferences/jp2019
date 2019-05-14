@@ -16,6 +16,7 @@
             <a href="[% make_uri('main') %]">{{Log in}}</a>
         </li>
     [% END %]
+    <li><a href="mailto:eiro    at   phear.org">contact</a></li>
     <li class="dropdown">
       <a href="[% make_uri('sponsors.html') %]">
         <t>
