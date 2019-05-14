@@ -1,17 +1,44 @@
-<center>[% WRAPPER menus/section %]<a href="[% make_uri('sponsors.html') %]">Sponsors</a>[% END %]
-[% isponsors = [];
-  BLOCK isponsor;
-     WRAPPER menus/section %]<p><a class="icon" href="[%  url %]"><img class="icon" width="225" src="[% make_uri('img')%]/[% img %]" alt="[% name %]" title="[% name %]"/></a></p>[%
-    END;
-  END;
-WRAPPER isponsor
-   img = 'logo/unistra.svg'
-   name = "Direction du numérique de l'université de Strasbourg"
-   url = 'http://www.unistra.fr';
+<center>
+[% WRAPPER menus/section
+%]<a href="[% make_uri('sponsors.html') %]">Sponsors</a>[% END %]
+[%
+
+BLOCK isponsor;
+    %]<h2><a class="icon" href="[%  url %]">[%
+    %]<img
+    class="icon"
+    width="225"
+    src="[% make_uri('img')%]/[% img %]"
+    alt="[% name %]" title="[% name %]"/></a></h2>[%
 END;
+
 WRAPPER isponsor
    img = 'logo/renater.svg'
    name = "Renater"
    url = 'http://www.renater.fr';
 END;
+
+WRAPPER isponsor
+   img = 'logo/worteks.svg'
+   name = "Worteks"
+   url = 'http://www.worteks.com';
+END;
+
+WRAPPER isponsor
+   img = 'logo/xstra.svg'
+   name = "X/Stra"
+   url = 'http://xstra.unistra.fr';
+END;
+
+
+
+
+
+
+
+
+
+
+
+
 %]</center>
