@@ -49,9 +49,9 @@ permet de configurer des outils comme
 les deux projets sont passés récement en version 1.0. des sessions de
 découverte de guile et guix sont au programme.
 
-# la soirée winstub
+# la soirée winstub (21 juin)
 
-découvrez la gastonomie alsacienne dans un restaurant typique (22 juin)
+découvrez la gastonomie alsacienne dans un restaurant typique
 
 [inscription](https://framadate.org/jp19sxbwinstub)
 
@@ -65,7 +65,7 @@ mais je tiens à mettre 3 interventions en lumière
     * le système OO de perl6 a changé ma vision des objets (Laurent
       Rosenfeld, plutot branché fonctionel habituellement)
 
-# la soirée winstub
+# balade dans strasbourg (23 juin)
 
 2 heures de visite de Strasbourg avec un historien parfaitement germanophone et
 amoureux de sa ville.
