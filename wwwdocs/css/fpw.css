@@ -359,3 +359,20 @@ table#agenda thead tr {
 table#agenda tbody tr {
     border-bottom: 1px solid black;
 }
+
+table#announcements {
+    width: 100%;
+    max-width: 100%;
+}
+
+table#announcements th * {
+    font-weight: bold;
+}
+
+table#announcements thead tr {
+    border-bottom: 3px solid black;
+}
+
+table#announcements tbody tr {
+    border-bottom: 1px solid black;
+}
