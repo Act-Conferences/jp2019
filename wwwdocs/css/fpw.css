@@ -1,3 +1,5 @@
+// vim: ts=4 sw=4
+
 h1, h2, h3 {
     text-shadow: 1px 1px 1px rgb(153, 153, 153);
 }
@@ -341,3 +343,19 @@ blockquote {
     margin-top: 20px;
 }
 
+table#agenda {
+    width: 100%;
+    max-width: 100%;
+}
+
+table#agenda th * {
+    font-weight: bold;
+}
+
+table#agenda thead tr {
+    border-bottom: 3px solid black;
+}
+
+table#agenda tbody tr {
+    border-bottom: 1px solid black;
+}
