@@ -350,6 +350,7 @@ table#agenda {
 
 table#agenda th * {
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 table#agenda thead tr {
@@ -360,6 +361,11 @@ table#agenda tbody tr {
     border-bottom: 1px solid black;
 }
 
+table#agenda tbody td {
+    padding: .5em;
+}
+
+
 table#announcements {
     width: 100%;
     max-width: 100%;
@@ -367,6 +373,7 @@ table#announcements {
 
 table#announcements th * {
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 table#announcements thead tr {
@@ -375,4 +382,8 @@ table#announcements thead tr {
 
 table#announcements tbody tr {
     border-bottom: 1px solid black;
+}
+
+table#announcements tbody td {
+    padding: .5em;
 }
