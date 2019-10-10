@@ -3,10 +3,24 @@
       <a href="?language=en">
         &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.uk.png') %]" alt="English"/>
       </a>
+      <a href="?language=ru">
+        &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.ru.png') %]" alt="Russian"/>
+      </a>
     </fr>
     <en>
       <a href="?language=fr">
         &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.fr.png') %]" alt="Fran&ccedil;ais"/>
       </a>
+      <a href="?language=ru">
+        &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.ru.png') %]" alt="Russian"/>
+      </a>
     </en>
+    <ru>
+      <a href="?language=fr">
+        &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.fr.png') %]" alt="Fran&ccedil;ais"/>
+      </a>
+      <a href="?language=en">
+        &nbsp;&nbsp;<img class="icon" src="[% make_uri_info('img', 'language.uk.png') %]" alt="English"/>
+      </a>
+    </ru>
   </t>
